@@ -1,0 +1,15 @@
+## Interface: 11302
+## Title: Attesor
+## Author: Nopt
+## Version: 6.0
+## DefaultState: Enabled
+## LoadOnDemand: 0
+## Notes: Talking cross-faction
+## Notes-frFR: Discussions inter-faction
+## SavedVariables: Attesor_Debug,Attesor_PlayersSeen
+## X-Website: https://github.com/nopt/Attesor
+
+mpi.lua
+Chiffre.lua
+Attesor.lua
+Attesor.xml

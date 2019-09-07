@@ -1,0 +1,29 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/..\FrameXML\UI.xsd">
+  <Script file="Attesor.lua"/>
+
+  <Frame name="Attesor_MainFrame" parent="UIParent" hidden="false">
+    <Scripts>
+      <OnLoad>
+         self:RegisterEvent("VARIABLES_LOADED");
+      </OnLoad>
+      <OnEvent>
+         if (event == "VARIABLES_LOADED") then
+           Attesor_Init();
+         end
+      </OnEvent>
+    </Scripts>
+  </Frame>
+
+
+  <Frame name="Attesor_Tooltip" parent="GameTooltip" hidden="false">
+    <Scripts>
+      <OnShow>
+        Attesor__OnShow();
+      </OnShow>
+    </Scripts>
+  </Frame>
+</Ui>
+
+
+
+
